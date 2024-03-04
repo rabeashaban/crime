@@ -1,0 +1,93 @@
+.bi-lightning-charge::before {
+  padding-right: 1rem;
+  font-size: 1.6rem;
+}
+.example {
+  width: 0.5rem;
+}
+section {
+  overflow: hidden;
+  overflow-y: auto;
+}
+table {
+  overflow: auto;
+}
+
+
+.sidbar-samal {
+  width: 77px !important;
+  overflow: hidden;
+  margin-right: 5px;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+.sidbar-samal .Sidbar-text {
+  display: none;
+}
+
+
+
+/* ==========lOGO ============ */
+.bi-lightning-charge{
+  rotate: 360deg;
+  transition: 1s;
+}
+.sidbar-samal .bi-lightning-charge{
+margin-top: 3rem;
+margin-left: 1rem;
+}
+.sidbar-samal  .bi-lightning-charge::before{
+content: "\F46C";
+transform: rotateY(360deg);
+transition: 1s;
+margin-right: 10px;
+display: block;
+}
+
+.close{
+  right: 5px;
+  z-index: 99999;
+}
+.close i{
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 20px;
+  rotate: 360deg;
+  transition: 1s;
+}
+.sidbar-samal .close {
+  left:  0;
+}
+.sidbar-samal .close .bi-x-circle::before {
+  content: "\F134";
+  padding-left:10px;
+  rotate: 360deg;
+  transition: 1s;
+}
+
+
+/*************/
+.btn-color-dark{
+position: fixed;
+left: 5px !important;
+}
+
+.cart-img img{
+  width: 100%;
+  transition: .5s;
+
+}
+.card:hover img{
+  transform: scale(1.1);
+}
+.cart-img{
+  overflow: hidden;
+}
+
+footer{
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: -100px;
+  padding-bottom: 10px;
+}
