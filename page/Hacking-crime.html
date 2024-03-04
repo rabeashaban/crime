@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Post - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- ?======= Css Filis ====== -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/sidebars.css" rel="stylesheet" />
+    <!-- ===== Icon ==== -->
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../css/mystyle.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <div
+      class="dropdown position-fixed bottom-0 mb-3 me-3 btn-color-dark bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="home" viewBox="0 0 16 16">
+        <path
+          d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+        />
+      </symbol>
+      <symbol id="people-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path
+          fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+        />
+      </symbol>
+    </svg>
+
+    <main class="d-flex flex-nowrap">
+      <!-- !===Sidbar====-->
+
+      <div
+        id="SidbarId"
+        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark position-relative"
+        style="width: 280px; transition: 0.5s"
+      >
+        <span class="close position-absolute">
+          <i onclick="toggleSidebar()" class="bi bi-x-circle"></i>
+        </span>
+
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <i class="bi bi-lightning-charge"></i>
+          <span class="fs-4 Sidbar-text">Sidebar</span>
+        </a>
+
+        <hr />
+
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link text-white" aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16">
+                <use xlink:href="#home" />
+              </svg>
+              <span class="Sidbar-text">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="blog.html" class="nav-link text-white ">
+              <i class="bi bi-file-earmark-post"></i>
+              <span class="Sidbar-text"> blog</span>
+            </a>
+          </li>
+        </ul>
+        <hr />
+      </div>
+
+      <div class="b-example-vr border-start"></div>
+      <!-- !=======NavBar=======! -->
+
+      <section class="w-100">
+        <nav class="navbar bg-body-tertiary">
+          <div
+            class="container-fluid justify-content-center justify-content-md-between"
+          >
+            <a class="navbar-brand fs-2 fw-bold mb-1 mb-md-0"> crime rate prediction</a>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Page content-->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-8">
+              <!-- Post content-->
+              <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                  <!-- Post title-->
+                  <h1 class="fw-bolder mb-1">Hacking crime</h1>
+                  <!-- Post meta content-->
+                  <div class="text-muted fst-italic mb-2">
+                    Posted on mar 4, 2024
+                  </div>
+                  <!-- Post categories-->
+                  <a
+                    class="badge bg-secondary text-decoration-none link-light"
+                    href="#!"
+                    >Hacking crime
+                  </a>
+                </header>
+
+                <!-- Preview image figure-->
+                <figure class="mb-4">
+                  <img class="img-fluid rounded" src="../img/1.jpg" alt="..." />
+                </figure>
+
+                <!-- Post content-->
+                <section class="mb-5">
+                  <p class="fs-6 mb-4">
+                    Information networks have become the basis on which all
+                    organizations and bodies, whether governmental or private,
+                    around the world depend, and even countries themselves have
+                    represented the information network and the basic symptoms
+                    in collecting and preserving all the information that
+                    pertains to its readers and dealing with it with other
+                    countries, as well as the state’s economic, political, and
+                    military secrets. And so in parallel with this global
+                    system. This global system is characterized by the fame of
+                    many people who call themselves “hackers” or pirates, and
+                    their experience in penetrating these information networks,
+                    whether for or for global bodies and institutions, and the
+                    accounts of specific parties or their personal accounts for
+                    the purpose of monitoring, blackmailing, espionage, and
+                    voyeurism. Accordingly, the legislator established a package
+                    of laws and legislation that would punish these electronic
+                    gangs, as required by the law and in accordance with each
+                    incident committed, as the Anti-Information Technology
+                    Crimes Law No. 175 of 2018 specified the penalty for
+                    attempting to commit a crime from the crimes stipulated in
+                    the law, which is half. The penalty prescribed for the
+                    crime. Article 40 stipulates that anyone who attempts to
+                    commit the misdemeanors stipulated in this law shall be
+                    punished not to exceed half the maximum penalty prescribed
+                    for the crime.
+                  </p>
+                  <p class="fs-6 mb-4">
+                    In this regard, Alaa Mukhtar, the lawyer, explains that the
+                    law sets penalties for the crime of attacking the integrity
+                    of the information network, as Article 21 stipulates that he
+                    shall be punished by imprisonment for a period of not less
+                    than six months, and a fine of not less than one hundred
+                    thousand pounds and not exceeding five hundred thousand
+                    pounds, or one of these two. The two penalties include
+                    anyone who intentionally causes an information network to
+                    stop working, disrupts it, limits the efficiency of its
+                    work, disturbs it, impedes it, intercepts its work, or
+                    unlawfully performs electronic processing of its data.
+                  </p>
+                  <p class="fs-6 mb-4">
+                    Mukhtar added that anyone who caused this by mistake shall
+                    be punished by imprisonment for a period of not less than
+                    three months, and a fine of not less than fifty thousand
+                    pounds and not exceeding two hundred thousand pounds, or one
+                    of these two penalties. If the crime occurred on an
+                    information network belonging to the state or a public legal
+                    person or If it is owned or managed by it, the penalty shall
+                    be aggravated imprisonment and a fine of not less than five
+                    hundred thousand pounds and not exceeding one million
+                    pounds.
+                  </p>
+
+                  <p class="fs-6 mb-4">
+                    Mukhtar pointed out that the law also established the
+                    penalty of aggravated imprisonment if a crime is committed
+                    that exposes the security and safety of society to danger,
+                    and the text of Article 34 states: “If any of the crimes
+                    stipulated in this law is committed for the purpose of
+                    disrupting public order or exposing the safety and security
+                    of society to danger or harming national security.” of the
+                    country or its economic position, or preventing or
+                    obstructing the public authorities from carrying out their
+                    work, or disrupting the provisions of the Constitution,
+                    laws, or regulations, or harming national unity and social
+                    peace, the penalty shall be aggravated imprisonment.
+                  </p>
+                  <p class="fs-6 mb-4">
+                    It is noteworthy that the law stipulates a number of
+                    penalties for anyone who creates a private account or
+                    website through which he aims to hinder the authorities from
+                    their work or to spread lies, as he shall be punished by
+                    imprisonment for a period of not less than two years and a
+                    fine of not less than 100 thousand pounds and not more than
+                    300 thousand, or one of the following: These two penalties
+                    apply to anyone who creates, manages, or uses a website or a
+                    private account on an information network with the aim of
+                    committing or facilitating the commission of a crime
+                    punishable by law.
+                  </p>
+                </section>
+              </article>
+              <!-- Comments section-->
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+              <!-- Search widget-->
+              <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                  <div class="input-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Enter search term..."
+                      aria-label="Enter search term..."
+                      aria-describedby="button-search"
+                    />
+                    <button
+                      class="btn btn-primary"
+                      id="button-search"
+                      type="button"
+                    >
+                      Go!
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Categories widget-->
+              <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul class="list-unstyled mb-0">
+                        <li><a href="Hacking-crime.html">Hacking crime </a></li>
+                        <li><a href="#!">..... </a></li>
+                        <li><a href="#!">.....</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul class="list-unstyled mb-0">
+                        <li><a href="#!">.....</a></li>
+                        <li><a href="#!">.....</a></li>
+                        <li><a href="#!">.....</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Side widget-->
+       
+            </div>
+          </div>
+        </div>
+        <footer class="border-top pt-3">
+          <p>All rights reserved © website crime 2024</p>
+        </footer>
+      </section>
+    </main>
+
+    <!-- Bootstrap core JS-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/sidebars.js"></script>
+    <script src="../js/color-modes.js"></script>
+    <script src="../js/main.jsx"></script>
+  </body>
+</html>
